@@ -7,13 +7,13 @@ window.title("Mile to Km Converter")
 window.config(pady=10, padx=10)
 
 # Labels
-miles = Label(text="Miles")
-is_iqual_to = Label(text="is equal to")
-result = Label(text="0")
-km = Label(text="Km")
+miles = Label(text="Miles", padx=5)
+is_iqual_to = Label(text="is equal to", padx=5)
+result = Label(text="0", padx=5)
+km = Label(text="Km", padx=5)
 
 # Fields
-entry = Entry(width=20)
+entry = Entry(width=15)
 entry.insert(END, string="0")
 
 
@@ -48,14 +48,14 @@ radio_km_to_miles = Radiobutton(text="Km to Miles", value="Km", variable=radio_s
 
 
 # placement
-entry.grid(column=2, row=1)
-miles.grid(column=3, row=1)
-is_iqual_to.grid(column=1, row=2)
-result.grid(column=2, row=2)
-km.grid(column=3, row=2)
-calculate.grid(column=2, row=3)
-radio_km_to_miles.grid(column=1, row=0)
-radio_miles_to_km.grid(column=1, row=1)
+entry.grid(column=2, row=2)
+miles.grid(column=3, row=2)
+is_iqual_to.grid(column=1, row=3)
+result.grid(column=2, row=3)
+km.grid(column=3, row=3)
+calculate.grid(column=2, row=4)
+radio_km_to_miles.grid(column=2, row=0)
+radio_miles_to_km.grid(column=2, row=1)
 entry.focus_set()
 
 
